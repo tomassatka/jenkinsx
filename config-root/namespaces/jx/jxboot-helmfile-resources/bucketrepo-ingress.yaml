@@ -16,4 +16,4 @@ spec:
               serviceName: bucketrepo
               servicePort: 80
             path: "/"
-      host: bucketrepo-jx.cluster.local
+      host: bucketrepo-jx.apps-crc.testing

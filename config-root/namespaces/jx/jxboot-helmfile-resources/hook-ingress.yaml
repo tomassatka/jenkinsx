@@ -15,4 +15,4 @@ spec:
           - backend:
               serviceName: hook
               servicePort: 80
-      host: hook-jx.cluster.local
+      host: hook-jx.apps-crc.testing

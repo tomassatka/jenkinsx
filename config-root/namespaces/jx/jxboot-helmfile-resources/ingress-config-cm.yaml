@@ -1,7 +1,7 @@
 # Source: jxboot-helmfile-resources/templates/ingress-config-configmap.yaml
 apiVersion: v1
 data:
-  domain: "cluster.local"
+  domain: "apps-crc.testing"
   email: ""
   exposer: "Ingress"
   issuer: ""

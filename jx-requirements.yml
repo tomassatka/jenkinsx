@@ -22,7 +22,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: apps-crc.testing 
+    domain: apps-crc.testing
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.

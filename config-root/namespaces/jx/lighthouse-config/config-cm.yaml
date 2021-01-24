@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - tomassatka/jenkinsx
-      target_url: http://dashboard-jx.cluster.local
+      target_url: http://dashboard-jx.apps-crc.testing
 kind: ConfigMap
 metadata:
   creationTimestamp: null
