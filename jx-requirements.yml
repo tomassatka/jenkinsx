@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: "cluster.local"
+    domain: "apps-crc.testing"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:

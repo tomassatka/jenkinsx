@@ -1,0 +1,173 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"labels\":{\"certmanager.k8s.io/disable-validation\":\"true\",\"env\":\"dev\",\"gitops.jenkins-x.io/pipeline\":\"cluster\",\"team\":\"jx\"},\"name\":\"jx\"}}\n",
+            "openshift.io/sa.scc.mcs": "s0:c24,c19",
+            "openshift.io/sa.scc.supplemental-groups": "1000590000/10000",
+            "openshift.io/sa.scc.uid-range": "1000590000/10000"
+        },
+        "creationTimestamp": "2021-01-22T21:46:39Z",
+        "deletionTimestamp": "2021-01-22T23:12:00Z",
+        "labels": {
+            "certmanager.k8s.io/disable-validation": "true",
+            "env": "dev",
+            "gitops.jenkins-x.io/pipeline": "cluster",
+            "team": "jx"
+        },
+        "managedFields": [
+            {
+                "apiVersion": "v1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:metadata": {
+                        "f:annotations": {
+                            ".": {},
+                            "f:openshift.io/sa.scc.mcs": {},
+                            "f:openshift.io/sa.scc.supplemental-groups": {},
+                            "f:openshift.io/sa.scc.uid-range": {}
+                        }
+                    }
+                },
+                "manager": "cluster-policy-controller",
+                "operation": "Update",
+                "time": "2021-01-22T21:46:39Z"
+            },
+            {
+                "apiVersion": "v1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:status": {
+                        "f:phase": {}
+                    }
+                },
+                "manager": "kubectl-create",
+                "operation": "Update",
+                "time": "2021-01-22T21:46:39Z"
+            },
+            {
+                "apiVersion": "v1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:metadata": {
+                        "f:annotations": {
+                            "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                        },
+                        "f:labels": {
+                            ".": {},
+                            "f:certmanager.k8s.io/disable-validation": {},
+                            "f:env": {},
+                            "f:gitops.jenkins-x.io/pipeline": {},
+                            "f:team": {}
+                        }
+                    }
+                },
+                "manager": "kubectl",
+                "operation": "Update",
+                "time": "2021-01-22T22:48:34Z"
+            },
+            {
+                "apiVersion": "v1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:status": {
+                        "f:conditions": {
+                            ".": {},
+                            "k:{\"type\":\"NamespaceContentRemaining\"}": {
+                                ".": {},
+                                "f:lastTransitionTime": {},
+                                "f:message": {},
+                                "f:reason": {},
+                                "f:status": {},
+                                "f:type": {}
+                            },
+                            "k:{\"type\":\"NamespaceDeletionContentFailure\"}": {
+                                ".": {},
+                                "f:lastTransitionTime": {},
+                                "f:message": {},
+                                "f:reason": {},
+                                "f:status": {},
+                                "f:type": {}
+                            },
+                            "k:{\"type\":\"NamespaceDeletionDiscoveryFailure\"}": {
+                                ".": {},
+                                "f:lastTransitionTime": {},
+                                "f:message": {},
+                                "f:reason": {},
+                                "f:status": {},
+                                "f:type": {}
+                            },
+                            "k:{\"type\":\"NamespaceDeletionGroupVersionParsingFailure\"}": {
+                                ".": {},
+                                "f:lastTransitionTime": {},
+                                "f:message": {},
+                                "f:reason": {},
+                                "f:status": {},
+                                "f:type": {}
+                            },
+                            "k:{\"type\":\"NamespaceFinalizersRemaining\"}": {
+                                ".": {},
+                                "f:lastTransitionTime": {},
+                                "f:message": {},
+                                "f:reason": {},
+                                "f:status": {},
+                                "f:type": {}
+                            }
+                        }
+                    }
+                },
+                "manager": "kube-controller-manager",
+                "operation": "Update",
+                "time": "2021-01-22T23:41:07Z"
+            }
+        ],
+        "name": "jx",
+        "resourceVersion": "423022",
+        "selfLink": "/api/v1/namespaces/jx",
+        "uid": "71e405e2-a3e3-4316-b43c-bc3febba0fea"
+    },
+    "spec": {
+        "finalizers": []
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2021-01-22T23:22:06Z",
+                "message": "All resources successfully discovered",
+                "reason": "ResourcesDiscovered",
+                "status": "False",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2021-01-22T23:13:14Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2021-01-22T23:13:14Z",
+                "message": "Failed to delete all resource types, 1 remaining: Internal error occurred: failed calling webhook \"validation.webhook.pipeline.tekton.dev\": Post \"https://tekton-pipelines-webhook.tekton-pipelines.svc:443/resource-validation?timeout=10s\": service \"tekton-pipelines-webhook\" not found",
+                "reason": "ContentDeletionFailed",
+                "status": "True",
+                "type": "NamespaceDeletionContentFailure"
+            },
+            {
+                "lastTransitionTime": "2021-01-22T23:14:11Z",
+                "message": "All content successfully removed",
+                "reason": "ContentRemoved",
+                "status": "False",
+                "type": "NamespaceContentRemaining"
+            },
+            {
+                "lastTransitionTime": "2021-01-22T23:13:14Z",
+                "message": "All content-preserving finalizers finished",
+                "reason": "ContentHasNoFinalizers",
+                "status": "False",
+                "type": "NamespaceFinalizersRemaining"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}
