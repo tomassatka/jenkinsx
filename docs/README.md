@@ -29,7 +29,7 @@
     <tr>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
 	      <td>1.1.1</td>
-	      <td><a href='http://dashboard-jx.cluster.local'>view</a></td>
+	      <td><a href='http://dashboard-jx.apps-crc.testing'>view</a></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
     <tr>
